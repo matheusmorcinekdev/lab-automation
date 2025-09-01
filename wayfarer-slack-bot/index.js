@@ -83,32 +83,34 @@ async function getSlackUserIdentity({ client }, userId) {
 
 // ---- Agent session creation (now authenticated) ----
 async function createSession(userId, sessionId, userIdentity) {
-  try {
-    const response = await fetchWithAuth(
-      `${AGENT_API_BASE}/apps/${AGENT_NAME}/users/${userId}/sessions/${sessionId}`,
-      {
-        method: "POST",
-        userIdentity,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          state: {
-            platform: "slack",
-            timestamp: new Date().toISOString(),
+  const response = await fetchWithAuth(
+    `${AGENT_API_BASE}/apps/${AGENT_NAME}/users/${userId}/sessions/${sessionId}`,
+    {
+      method: "POST",
+      userIdentity, // only used to add X-Actor-* (optional)
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        state: {
+          identity: {
+            source: "slack",
+            user: {
+              id: userIdentity.id,
+              name: userIdentity.name,
+              email: userIdentity.email,
+            },
           },
-        }),
-      }
-    );
-
-    if (!response.ok) {
-      const text = await response.text();
-      throw new Error(`Failed to create session: ${response.status} ${response.statusText} - ${text}`);
+          platform: "slack",
+          timestamp: new Date().toISOString(),
+        },
+      }),
     }
-    console.log(`Session created for user ${userId}, session ${sessionId}`);
-    return true;
-  } catch (error) {
-    console.error("Error creating session:", error);
-    return false;
+  );
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Failed to create session: ${response.status} ${response.statusText} - ${text}`);
   }
+  return true;
 }
 
 // ---- Agent call (now authenticated + optional identity headers) ----
