@@ -1,17 +1,27 @@
 from google.adk.agents import Agent
 
-def get_weather(city: str) -> dict:
-    """Retrieves the current weather report for a specified city.
+# # Hypothetical callback function
+# def validate_tool_params(
+#     callback_context: CallbackContext, # Correct context type
+#     tool: BaseTool,
+#     args: Dict[str, Any],
+#     tool_context: ToolContext
+#     ) -> Optional[Dict]: # Correct return type for before_tool_callback
 
-    Returns:
-        dict: A dictionary containing the weather information with a 'status' key ('success' or 'error') and a 'report' key with the weather details if successful, or an 'error_message' if an error occurred.
-    """
-    if city.lower() == "new york":
-        return {"status": "success",
-                "report": "The weather in New York is sunny with a temperature of 25 degrees Celsius (77 degrees Fahrenheit)."}
-    else:
-        return {"status": "error",
-                "error_message": f"Weather information for '{city}' is not available."}
+#   print(f"Callback triggered for tool: {tool.name}, args: {args}")
+
+#   # Example validation: Check if a required user ID from state matches an arg
+#   expected_user_id = callback_context.state.get("session_user_id")
+#   actual_user_id_in_args = args.get("user_id_param") # Assuming tool takes 'user_id_param'
+
+#   if actual_user_id_in_args != expected_user_id:
+#       print("Validation Failed: User ID mismatch!")
+#       # Return a dictionary to prevent tool execution and provide feedback
+#       return {"error": f"Tool call blocked: User ID mismatch."}
+
+#   # Return None to allow the tool call to proceed if validation passes
+#   print("Callback validation passed.")
+#   return None
 
 def get_current_time(city:str) -> dict:
     """Returns the current time in a specified city.
@@ -36,7 +46,8 @@ def get_current_time(city:str) -> dict:
 root_agent = Agent(
     name="weather_time_agent",
     model="gemini-2.0-flash",
-    description="Agent to answer questions about the time and weather in a city.",
-    instruction="I can answer your questions about the time and weather in a city.",
-    tools=[get_weather, get_current_time]
+    description="Agent to answer questions about the time in a city.",
+    instruction="I can answer your questions about the time in a city.",
+    # before_tool_callback=validate_tool_params,
+    tools=[get_current_time]
 )
