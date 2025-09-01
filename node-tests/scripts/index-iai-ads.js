@@ -1,18 +1,21 @@
-// IAI-focused Memory Probe: visits up to N .fs-iai, waits for render, idles, then summarizes.
-// Works best in Chromium. Safari/iOS may not expose memory APIs.
+// IAI-focused Memory Probe: visits up to N .fs-iai, waits for render,
+// adds a random delay between ads, idles at the last ad, then summarizes.
 (async function iaiMemProbe({
   label = 'baseline',
-  maxAds = 5,                 // how many .fs-iai to visit
-  perAdTimeoutMs = 20000,     // max wait per ad to detect load
-  settleAfterLoadMs = 1500,   // small delay after load to stabilize
-  idleAfterLastMs = 90000,    // idle at the last ad (let refresh happen)
-  sampleEveryMs = 1000,       // background sampler (for peaks)
-  scrollBehavior = 'smooth'   // or 'auto' if you want it faster
+  maxAds = 5,                   // how many .fs-iai to visit
+  perAdTimeoutMs = 20000,       // max wait per ad to detect load
+  settleAfterLoadMs = 1500,     // small delay after load to stabilize
+  minDelayBetweenAdsMs = 10000, // minimum random wait after an ad appears (15s)
+  maxDelayBetweenAdsMs = 15000, // maximum random wait after an ad appears (25s)
+  idleAfterLastMs = 90000,      // idle at the last ad to allow refresh (~1.5min)
+  sampleEveryMs = 1000,         // background sampler (for peaks)
+  scrollBehavior = 'smooth'     // or 'auto' if you want faster scrolls
 } = {}) {
   const supportsUA   = !!performance.measureUserAgentSpecificMemory;
   const supportsHeap = !!(performance.memory && 'usedJSHeapSize' in performance.memory);
   const sleep = ms => new Promise(r => setTimeout(r, ms));
   const nowISO = () => new Date().toISOString();
+  const randBetween = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
   const getDOMCount = () => document.getElementsByTagName('*').length;
   const fmt = b => (b == null ? null :
@@ -42,25 +45,21 @@
   }
   async function scrollIntoViewAndWait(el) {
     el.scrollIntoView({ block: 'center', behavior: scrollBehavior });
-    // give layout/IO a moment
-    await sleep(400);
+    await sleep(400); // allow layout/IO settle
   }
   async function waitForAdLoad(el, timeoutMs) {
     const t0 = performance.now();
     if (isSlotLoaded(el)) return { loaded: true, timeToLoadMs: 0 };
     return new Promise(resolve => {
       let done = false;
-      const slot = getSlot(el);
       const finish = (loaded) => {
         if (done) return;
         done = true;
         resolve({ loaded, timeToLoadMs: Math.round(performance.now() - t0) });
       };
-      // Fallback polling (robust across ad libs)
       const iv = setInterval(() => {
         if (isSlotLoaded(el)) { clearInterval(iv); clearTimeout(to); finish(true); }
       }, 250);
-      // Safety timeout
       const to = setTimeout(() => {
         clearInterval(iv);
         finish(false);
@@ -68,7 +67,6 @@
     });
   }
 
-  // Gather all .fs-iai in DOM order
   const slots = Array.from(document.querySelectorAll('.fs-iai'));
   if (!slots.length) {
     console.warn('No .fs-iai elements found.');
@@ -116,6 +114,13 @@
       dom_after: getDOMCount(),
       durationMs: Math.round(performance.now() - tStart)
     });
+
+    // Random wait before moving to next ad
+    if (i < targetSlots.length - 1) {
+      const delay = randBetween(minDelayBetweenAdsMs, maxDelayBetweenAdsMs);
+      console.log(`⏳ Waiting ${Math.round(delay/1000)}s before next ad...`);
+      await sleep(delay);
+    }
   }
 
   // Idle at last ad (refresh window)
@@ -124,7 +129,6 @@
   }
   await sleep(idleAfterLastMs);
 
-  // Stop sampling and finalize
   sampling = false;
   await sleep(sampleEveryMs + 20);
 
@@ -172,7 +176,6 @@
     'IAI loaded (of tested)': `${result.ads.loadedCount}`
   });
 
-  // Per-ad row view
   console.table(result.ads.items.map(r => ({
     idx: r.index,
     id: r.id,

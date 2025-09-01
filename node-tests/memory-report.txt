@@ -1,0 +1,14 @@
+{
+  "profile": {
+    "samples": [
+      {
+        "size": 1048576,
+        "total": 1048576,
+        "stack": [
+          "<V8 Heap>"
+        ]
+      }
+    ],
+    "modules": []
+  }
+}
