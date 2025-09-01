@@ -1,0 +1,31 @@
+Quick architecture summary (for README later)
+
+Goal: expose a secure HTTP API for a Google ADK agent (/run), callable only by authenticated services (e.g., your Slack Bolt app).
+
+Auth: Keycloak OIDC with client_credentials (service-to-service).
+
+Server: FastAPI wrapper around ADK’s get_fast_api_app(agent=...).
+
+Security:
+
+Every request to /run must include Authorization: Bearer <access_token>.
+
+Middleware verifies JWT signature (JWKS), iss, and aud.
+
+Middleware extracts identity from token claims by default (preferred_username, email, sub).
+
+Optional “on-behalf-of” user via headers X-Actor-User / X-Actor-Email is allowed only if caller’s token contains a special role can_impersonate.
+
+Identity propagation downstream (optional):
+
+Middleware can auto-sync {user, email} into ADK session.state so tools read identity from tool_context.state.
+
+Tools can then forward identity to MCP servers (optionally with an HMAC signature or the original token).
+
+Endpoints:
+
+GET /healthz → public.
+
+POST /run → protected (requires Bearer).
+
+GET /docs, GET /openapi.json → (optional) public for dev.
