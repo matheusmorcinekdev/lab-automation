@@ -14,7 +14,7 @@ from google.adk.cli.fast_api import get_fast_api_app
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'wayfarer-agent'))
-from agent import root_agent  # This is our actual agent that handles user requests
+# Note: We don't manually import root_agent here - let ADK discover it automatically
 
 # ---- Security Configuration ----
 # These settings tell our app how to connect to Keycloak (our authentication server)

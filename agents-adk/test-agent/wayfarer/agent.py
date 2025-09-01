@@ -64,13 +64,43 @@ def get_current_time(city: str) -> dict:
         "report": f"The current time in {city} is {now.strftime('%Y-%m-%d %H:%M:%S %Z%z')}"
     }
 
+def my_session_state_test_tool(tool_context) -> dict:
+    """
+    Tool function that returns the current session state information.
+    This tool demonstrates how to access session state data that was
+    populated by the middleware (user, email, etc.).
+    
+    Args:
+        tool_context: The tool context object containing session state
+        
+    Returns:
+        dict: A dictionary with:
+            - status: "success"
+            - message: A descriptive message about the session state
+            - state: The current session state data
+    """
+    # Extract session state from tool context
+    session_state = tool_context.state if hasattr(tool_context, 'state') else {}
+    
+    # Create a descriptive message
+    user = session_state.get('user', 'Unknown')
+    email = session_state.get('email', 'No email')
+    
+    message = f"Current session state retrieved successfully. User: {user}, Email: {email}"
+    
+    return {
+        "status": "success",
+        "message": message,
+        "state": session_state
+    }
+
 # ---- Create the Agent Instance ----
 # This is where we define our actual AI agent with its capabilities and behavior
 root_agent = Agent(
-    name="weather_time_agent",                    # Internal name for the agent
+    name="wayfarer",                    # Internal name for the agent
     model="gemini-2.0-flash",                     # The AI model to use (Google's Gemini)
     description="Agent to answer questions about the time in a city.",  # What the agent does
     instruction="I can answer your questions about the time in a city.",  # How the agent should behave
     # before_tool_callback=validate_tool_params,  # Optional: security validation (currently disabled)
-    tools=[get_current_time]                      # List of tools/functions the agent can use
+    tools=[get_current_time, my_session_state_test_tool]  # List of tools/functions the agent can use
 )
