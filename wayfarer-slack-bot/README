@@ -1,0 +1,14 @@
+# Slack
+SLACK_APP_TOKEN=xapp-...
+SLACK_BOT_TOKEN=xoxb-...
+
+# Agent API
+AGENT_API_BASE=http://localhost:8000
+AGENT_NAME=TARS
+SEND_ACTOR_HEADERS=true
+
+# Keycloak for Bolt (this is the Bolt client's credentials)
+KC_URL=http://localhost:8080
+KC_REALM=master
+KC_CLIENT_ID=bolt-client            # create a *separate* client for Bolt
+KC_CLIENT_SECRET=...                # its secret

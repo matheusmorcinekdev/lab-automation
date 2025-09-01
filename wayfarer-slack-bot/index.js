@@ -10,22 +10,70 @@ const app = new App({
   socketMode: true,
   appToken: process.env.SLACK_APP_TOKEN,
   token: process.env.SLACK_BOT_TOKEN,
-  // signingSecret is not required in Socket Mode; keep it only if you also expose HTTP routes
-  // signingSecret: process.env.SLACK_SIGNING_SECRET,
 });
 
-// ---- Config (unchanged) ----
-const AGENT_API_BASE = "http://localhost:8000";
-const AGENT_NAME = "TARS";
+// ---- Config ----
+const AGENT_API_BASE = process.env.AGENT_API_BASE || "http://localhost:8000";
+const AGENT_NAME = process.env.AGENT_NAME || "TARS";
+
+// Whether to send X-Actor-* (your server will only honor them if the token has can_impersonate)
+const SEND_ACTOR_HEADERS = process.env.SEND_ACTOR_HEADERS !== "false";
+
+// ---- Keycloak S2S token (client_credentials) with simple in-memory cache ----
+let _kc = { token: null, exp: 0 };
+async function getAccessToken() {
+  const now = Math.floor(Date.now() / 1000);
+  if (_kc.token && now < _kc.exp - 30) return _kc.token; // reuse until ~30s before expiry
+
+  const params = new URLSearchParams();
+  params.append("grant_type", "client_credentials");
+  params.append("client_id", process.env.KC_CLIENT_ID);       // e.g., "bolt-client"
+  params.append("client_secret", process.env.KC_CLIENT_SECRET);
+
+  const url = `${process.env.KC_URL}/realms/${process.env.KC_REALM}/protocol/openid-connect/token`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: params
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`Keycloak token error: ${res.status} ${res.statusText} - ${text}`);
+  }
+
+  const data = await res.json();
+  // parse exp for caching
+  try {
+    const payload = JSON.parse(Buffer.from(data.access_token.split(".")[1], "base64").toString());
+    _kc = { token: data.access_token, exp: payload.exp || now + (data.expires_in || 300) };
+  } catch {
+    _kc = { token: data.access_token, exp: now + (data.expires_in || 300) };
+  }
+  return _kc.token;
+}
+
+// ---- Small wrapper to auto-attach Authorization + identity headers ----
+async function fetchWithAuth(url, { userIdentity, ...init } = {}) {
+  const token = await getAccessToken();
+  const headers = {
+    ...(init.headers || {}),
+    "Authorization": `Bearer ${token}`,
+  };
+
+  console.log('@@@ fetchWithAuth: ', userIdentity);
+
+  if (SEND_ACTOR_HEADERS && userIdentity) {
+    if (userIdentity.name) headers["X-Actor-User"] = userIdentity.name;
+    if (userIdentity.email) headers["X-Actor-Email"] = userIdentity.email;
+  }
+
+  return fetch(url, { ...init, headers });
+}
 
 // ---- Helper: get Slack user identity (email/name) ----
 async function getSlackUserIdentity({ client }, userId) {
-  // You need 'users:read.email' (for email) and 'users:read' scopes
   const { user } = await client.users.info({ user: userId });
-  // Some workspaces restrict email; handle nulls gracefully
-
-  console.log('@@@ user :', JSON.stringify(user));
-
   return {
     id: user?.id,
     name: user?.profile?.real_name || user?.real_name || user?.name || user?.id,
@@ -33,21 +81,27 @@ async function getSlackUserIdentity({ client }, userId) {
   };
 }
 
-// ---- Agent session creation (unchanged) ----
-async function createSession(userId, sessionId) {
+// ---- Agent session creation (now authenticated) ----
+async function createSession(userId, sessionId, userIdentity) {
   try {
-    const response = await fetch(`${AGENT_API_BASE}/apps/${AGENT_NAME}/users/${userId}/sessions/${sessionId}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        state: {
-          platform: "slack",
-          timestamp: new Date().toISOString(),
-        },
-      }),
-    });
+    const response = await fetchWithAuth(
+      `${AGENT_API_BASE}/apps/${AGENT_NAME}/users/${userId}/sessions/${sessionId}`,
+      {
+        method: "POST",
+        userIdentity,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          state: {
+            platform: "slack",
+            timestamp: new Date().toISOString(),
+          },
+        }),
+      }
+    );
+
     if (!response.ok) {
-      throw new Error(`Failed to create session: ${response.status} ${response.statusText}`);
+      const text = await response.text();
+      throw new Error(`Failed to create session: ${response.status} ${response.statusText} - ${text}`);
     }
     console.log(`Session created for user ${userId}, session ${sessionId}`);
     return true;
@@ -57,35 +111,46 @@ async function createSession(userId, sessionId) {
   }
 }
 
-// ---- Agent call (optionally include identity now; JWTs come in Step 2) ----
+// ---- Agent call (now authenticated + optional identity headers) ----
 async function callTarsAgent(userIdentity, sessionId, message) {
   try {
     const payload = {
       app_name: AGENT_NAME,
-      user_id: userIdentity.id, // keep your original contract
+      user_id: userIdentity.id,
       session_id: sessionId,
-      new_message: {
-        role: "user",
-        parts: [{ text: message }],
-      },
-      // Optional: include identity hint for tracing (POC only; safe to remove later)
-      // _user_context: { email: userIdentity.email, name: userIdentity.name },
+      new_message: { role: "user", parts: [{ text: message }] },
     };
 
-    const response = await fetch(`${AGENT_API_BASE}/run`, {
+    const response = await fetchWithAuth(`${AGENT_API_BASE}/run`, {
       method: "POST",
+      userIdentity,
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     });
 
+    if (response.status === 401 || response.status === 403) {
+      // token might be expired or audience mismatch; try refresh once
+      _kc = { token: null, exp: 0 };
+      const retry = await fetchWithAuth(`${AGENT_API_BASE}/run`, {
+        method: "POST",
+        userIdentity,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!retry.ok) {
+        const text = await retry.text();
+        throw new Error(`Agent call failed (after refresh): ${retry.status} ${retry.statusText} - ${text}`);
+      }
+      return await retry.json();
+    }
+
     if (!response.ok) {
-      throw new Error(`Failed to call agent: ${response.status} ${response.statusText}`);
+      const text = await response.text();
+      throw new Error(`Agent call failed: ${response.status} ${response.statusText} - ${text}`);
     }
 
     const result = await response.json();
-    console.log("Agent response:", result);
-
-    // Extract text as you already do
+    // your extraction logic stays as-is
     if (Array.isArray(result) && result.length > 0) {
       for (let i = result.length - 1; i >= 0; i--) {
         const event = result[i];
@@ -110,30 +175,24 @@ async function callTarsAgent(userIdentity, sessionId, message) {
 
 // ---- Listener ----
 app.message(async ({ message, say, client, logger }) => {
-  // Guardrails
   if (!message?.text) return;
-  if (message.subtype === "bot_message") return;        // ignore bot messages
-  if (message.channel_type !== "im") return;            // only DMs for this POC
+  if (message.subtype === "bot_message") return;
+  if (message.channel_type !== "im") return;
 
   const userId = message.user;
   const sessionId = `slack_${userId}_${Date.now()}`;
 
   try {
-    // 1) Resolve Slack identity (email/name)
     const userIdentity = await getSlackUserIdentity({ client }, userId);
     logger.info({ userIdentity }, "Resolved Slack user identity");
 
-    // 2) Create agent session
-    const sessionCreated = await createSession(userId, sessionId);
+    const sessionCreated = await createSession(userId, sessionId, userIdentity);
     if (!sessionCreated) {
       await say({ text: "Sorry, I'm having trouble starting a new conversation session." });
       return;
     }
 
-    // 3) Call agent
     const agentResponse = await callTarsAgent(userIdentity, sessionId, message.text);
-
-    // 4) Reply
     await say({ text: agentResponse });
   } catch (error) {
     console.error("Error processing message:", error);
