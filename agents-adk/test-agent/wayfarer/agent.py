@@ -79,20 +79,57 @@ def my_session_state_test_tool(tool_context) -> dict:
             - message: A descriptive message about the session state
             - state: The current session state data
     """
-    # Extract session state from tool context
-    session_state = tool_context.state if hasattr(tool_context, 'state') else {}
-    
-    # Create a descriptive message
-    user = session_state.get('user', 'Unknown')
-    email = session_state.get('email', 'No email')
-    
-    message = f"Current session state retrieved successfully. User: {user}, Email: {email}"
-    
-    return {
-        "status": "success",
-        "message": message,
-        "state": session_state
-    }
+    try:
+        # Extract session state from tool context
+        # Handle different types of tool_context objects
+        if hasattr(tool_context, 'state'):
+            # Convert ADK State object to a serializable dict
+            if hasattr(tool_context.state, 'model_dump'):
+                # If it's a Pydantic model, convert to dict
+                session_state = tool_context.state.model_dump()
+            elif hasattr(tool_context.state, '__dict__'):
+                # If it has __dict__, use that
+                session_state = tool_context.state.__dict__.copy()
+            else:
+                # Try to convert to dict directly
+                session_state = dict(tool_context.state) if hasattr(tool_context.state, '__iter__') else {}
+        else:
+            session_state = {}
+        
+        # Handle nested state structure (state.state)
+        if 'state' in session_state and isinstance(session_state['state'], dict):
+            # Extract the nested state data
+            nested_state = session_state['state']
+            if 'identity' in nested_state and 'user' in nested_state['identity']:
+                user_info = nested_state['identity']['user']
+                user = user_info.get('name', 'Unknown')
+                email = user_info.get('email', 'No email')
+                user_id = user_info.get('id', 'Unknown ID')
+                source = nested_state['identity'].get('source', 'Unknown')
+                platform = nested_state.get('platform', 'Unknown')
+                timestamp = nested_state.get('timestamp', 'Unknown')
+                
+                message = f"Current session state retrieved successfully. User: {user} ({user_id}), Email: {email}, Source: {source}, Platform: {platform}, Timestamp: {timestamp}"
+            else:
+                message = f"Session state found but user identity not available. State keys: {list(nested_state.keys())}"
+        else:
+            # Fallback to direct state access
+            user = session_state.get('user', 'Unknown')
+            email = session_state.get('email', 'No email')
+            message = f"Current session state retrieved successfully. User: {user}, Email: {email}"
+        
+        return {
+            "status": "success",
+            "message": message,
+            "state": session_state
+        }
+    except Exception as e:
+        # Fallback in case of any serialization issues
+        return {
+            "status": "success",
+            "message": f"Session state retrieved but encountered serialization issue: {str(e)}",
+            "state": {"error": "Serialization issue", "details": str(e)}
+        }
 
 # ---- Create the Agent Instance ----
 # This is where we define our actual AI agent with its capabilities and behavior
@@ -102,5 +139,5 @@ root_agent = Agent(
     description="Agent to answer questions about the time in a city.",  # What the agent does
     instruction="I can answer your questions about the time in a city.",  # How the agent should behave
     # before_tool_callback=validate_tool_params,  # Optional: security validation (currently disabled)
-    tools=[get_current_time, my_session_state_test_tool]  # List of tools/functions the agent can use
+    tools=[my_session_state_test_tool]  # List of tools/functions the agent can use
 )
