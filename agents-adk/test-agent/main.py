@@ -57,33 +57,34 @@ app = FastAPI()
 
 @app.middleware("http")
 async def auth_and_headers(request: Request, call_next):
-    # Require Bearer token
+    # Skip auth for public endpoints like /healthz
+    if request.url.path.startswith("/healthz"):
+        return await call_next(request)
+
+    # Require Bearer token for everything else
     auth = request.headers.get("authorization") or request.headers.get("Authorization")
     if not auth or not auth.lower().startswith("bearer "):
         return JSONResponse({"detail": "Missing bearer token"}, status_code=401)
+
     token = auth.split(" ", 1)[1].strip()
 
-    # Verify with Keycloak
     try:
         claims = verify_bearer(token)
     except HTTPException as e:
         return JSONResponse({"detail": e.detail}, status_code=e.status_code)
 
-    # Capture identity (from headers, fallback to token claims)
-    actor_user  = request.headers.get("X-Actor-User")  or claims.get("preferred_username") or claims.get("sub")
+    # Capture identity from headers or fallback to token claims
+    actor_user = request.headers.get("X-Actor-User") or claims.get("preferred_username") or claims.get("sub")
     actor_email = request.headers.get("X-Actor-Email") or claims.get("email")
-
-    # Stash for potential use (e.g., later sync to session.state)
     request.state.actor = {"user": actor_user, "email": actor_email, "claims": claims}
 
     return await call_next(request)
 
-# Protect all ADK endpoints
-app.mount("/", adk_app)
 
-# Optional public health endpoint (no auth)
-health = FastAPI()
-@health.get("/healthz")
+# Add health endpoint directly to main app (before mounting ADK)
+@app.get("/healthz")
 def healthz():
     return {"ok": True}
-app.mount("/healthz", health)
+
+# Protect all ADK endpoints
+app.mount("/", adk_app)
