@@ -73,7 +73,7 @@ function main() {
     date: new Date().toISOString().slice(0, 10),
     cohort_count: cohorts.size,
     notes: 'Cohort identity = Country|Domain|DeviceType',
-    sample_keys: Array.from(cohorts).slice(0, 10), // just to help sanity-check
+    sample_cohorts_first_10: Array.from(cohorts).slice(0, 10), // just to help sanity-check
     by_country: countrySummaries
   };
 

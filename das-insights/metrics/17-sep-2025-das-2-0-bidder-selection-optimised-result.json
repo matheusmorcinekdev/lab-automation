@@ -1,0 +1,652 @@
+{
+  "date": "2025-09-17",
+  "cohort_count": 645,
+  "notes": "Cohort identity = Country|Domain|DeviceType",
+  "sample_cohorts_first_10": [
+    "ID|chordtela.com|default",
+    "ID|chordtela.com|smartphone-ios",
+    "ID|chordtela.com|mobile",
+    "ID|default|default",
+    "ID|default|desktop",
+    "ID|default|mobile",
+    "ID|default|smartphone-ios",
+    "ID|10fastfingers.com|default",
+    "ID|10fastfingers.com|desktop",
+    "US|aftvnews.com|default"
+  ],
+  "by_country": [
+    {
+      "country": "ID",
+      "cohortCount": 9,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "chordtela.com(3)",
+        "default(4)",
+        "10fastfingers.com(2)"
+      ]
+    },
+    {
+      "country": "US",
+      "cohortCount": 341,
+      "domainCount": 161,
+      "devicesPerDomain": [
+        "aftvnews.com(3)",
+        "newrepublic.com(4)",
+        "legacy.com(4)",
+        "textnow.com(2)",
+        "powerball.com(4)",
+        "themirror.com(5)",
+        "signupgenius.com(4)",
+        "default(5)",
+        "nationalreview.com(3)",
+        "fantasypros.com(2)"
+      ]
+    },
+    {
+      "country": "CA",
+      "cohortCount": 33,
+      "domainCount": 19,
+      "devicesPerDomain": [
+        "remax.ca(2)",
+        "default(5)",
+        "flightaware.com(1)",
+        "creaders.net(2)",
+        "famousbirthdays.com(1)",
+        "thehockeywriters.com(1)",
+        "stockwatch.com(1)",
+        "insauga.com(2)",
+        "baseball-reference.com(1)",
+        "deckshop.pro(1)"
+      ]
+    },
+    {
+      "country": "VN",
+      "cohortCount": 5,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "liveworksheets.com(1)",
+        "default(4)"
+      ]
+    },
+    {
+      "country": "PL",
+      "cohortCount": 6,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "deckshop.pro(1)",
+        "default(4)",
+        "fragrantica.pl(1)"
+      ]
+    },
+    {
+      "country": "BR",
+      "cohortCount": 12,
+      "domainCount": 8,
+      "devicesPerDomain": [
+        "deckshop.pro(1)",
+        "default(4)",
+        "fragrantica.com.br(1)",
+        "biblegateway.com(1)",
+        "beebom.com(1)",
+        "aftvnews.com(1)",
+        "rachacuca.com.br(2)",
+        "hajapaciencia.com.br(1)"
+      ]
+    },
+    {
+      "country": "UY",
+      "cohortCount": 5,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "elpais.com.uy(2)",
+        "default(3)"
+      ]
+    },
+    {
+      "country": "MX",
+      "cohortCount": 10,
+      "domainCount": 4,
+      "devicesPerDomain": [
+        "unotv.com(3)",
+        "default(4)",
+        "biblegateway.com(2)",
+        "fragrantica.es(1)"
+      ]
+    },
+    {
+      "country": "default",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "NZ",
+      "cohortCount": 4,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(4)"
+      ]
+    },
+    {
+      "country": "UA",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "AU",
+      "cohortCount": 12,
+      "domainCount": 5,
+      "devicesPerDomain": [
+        "default(5)",
+        "biblegateway.com(2)",
+        "zerogpt.com(2)",
+        "boredpanda.com(2)",
+        "fragrantica.com(1)"
+      ]
+    },
+    {
+      "country": "EC",
+      "cohortCount": 5,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "default(3)",
+        "liveworksheets.com(2)"
+      ]
+    },
+    {
+      "country": "PK",
+      "cohortCount": 3,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(3)"
+      ]
+    },
+    {
+      "country": "MA",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "DO",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "HU",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "PA",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "IN",
+      "cohortCount": 20,
+      "domainCount": 11,
+      "devicesPerDomain": [
+        "default(4)",
+        "deepai.org(1)",
+        "whatismyipaddress.com(2)",
+        "zerogpt.com(2)",
+        "levvvel.com(1)",
+        "simpleimageresizer.com(1)",
+        "10fastfingers.com(1)",
+        "aviationa2z.com(2)",
+        "vecteezy.com(2)",
+        "jsonformatter.org(2)"
+      ]
+    },
+    {
+      "country": "VE",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "RS",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "PE",
+      "cohortCount": 5,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "default(3)",
+        "liveworksheets.com(2)"
+      ]
+    },
+    {
+      "country": "KE",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "BE",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "IL",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "CR",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "GT",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "NO",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "SE",
+      "cohortCount": 3,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(3)"
+      ]
+    },
+    {
+      "country": "AR",
+      "cohortCount": 5,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "default(3)",
+        "aftvnews.com(1)",
+        "biblegateway.com(1)"
+      ]
+    },
+    {
+      "country": "KH",
+      "cohortCount": 4,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "default(2)",
+        "10fastfingers.com(2)"
+      ]
+    },
+    {
+      "country": "PH",
+      "cohortCount": 12,
+      "domainCount": 5,
+      "devicesPerDomain": [
+        "default(4)",
+        "biblegateway.com(2)",
+        "deepai.org(1)",
+        "zerogpt.com(3)",
+        "beebom.com(2)"
+      ]
+    },
+    {
+      "country": "PT",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "NL",
+      "cohortCount": 4,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(4)"
+      ]
+    },
+    {
+      "country": "GB",
+      "cohortCount": 18,
+      "domainCount": 10,
+      "devicesPerDomain": [
+        "default(5)",
+        "thisisanfield.com(1)",
+        "footballwebpages.co.uk(1)",
+        "aftvnews.com(1)",
+        "deckshop.pro(1)",
+        "aviationa2z.com(2)",
+        "boredpanda.com(3)",
+        "fragrantica.com(2)",
+        "famousbirthdays.com(1)",
+        "word.tips(1)"
+      ]
+    },
+    {
+      "country": "DK",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "EG",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "CO",
+      "cohortCount": 8,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "default(4)",
+        "biblegateway.com(2)",
+        "liveworksheets.com(2)"
+      ]
+    },
+    {
+      "country": "CH",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "IQ",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "TR",
+      "cohortCount": 4,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(4)"
+      ]
+    },
+    {
+      "country": "DE",
+      "cohortCount": 5,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "default(4)",
+        "deckshop.pro(1)"
+      ]
+    },
+    {
+      "country": "DZ",
+      "cohortCount": 3,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "default(2)",
+        "aftvnews.com(1)"
+      ]
+    },
+    {
+      "country": "GR",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "HR",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "KR",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "FI",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "JP",
+      "cohortCount": 6,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "default(4)",
+        "time.is(1)",
+        "reuters.com(1)"
+      ]
+    },
+    {
+      "country": "HK",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "HN",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "RO",
+      "cohortCount": 3,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(3)"
+      ]
+    },
+    {
+      "country": "ES",
+      "cohortCount": 9,
+      "domainCount": 4,
+      "devicesPerDomain": [
+        "default(4)",
+        "fragrantica.es(1)",
+        "liveworksheets.com(2)",
+        "aftvnews.com(2)"
+      ]
+    },
+    {
+      "country": "NG",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "SA",
+      "cohortCount": 4,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(4)"
+      ]
+    },
+    {
+      "country": "AT",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "PR",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "FR",
+      "cohortCount": 6,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "default(4)",
+        "aftvnews.com(1)",
+        "fragrantica.fr(1)"
+      ]
+    },
+    {
+      "country": "BD",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "TH",
+      "cohortCount": 8,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "default(4)",
+        "beebom.com(2)",
+        "liveworksheets.com(2)"
+      ]
+    },
+    {
+      "country": "ZA",
+      "cohortCount": 6,
+      "domainCount": 3,
+      "devicesPerDomain": [
+        "default(3)",
+        "aftvnews.com(2)",
+        "biblegateway.com(1)"
+      ]
+    },
+    {
+      "country": "SG",
+      "cohortCount": 4,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(4)"
+      ]
+    },
+    {
+      "country": "IT",
+      "cohortCount": 5,
+      "domainCount": 2,
+      "devicesPerDomain": [
+        "default(4)",
+        "fragrantica.it(1)"
+      ]
+    },
+    {
+      "country": "MY",
+      "cohortCount": 4,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(4)"
+      ]
+    },
+    {
+      "country": "CL",
+      "cohortCount": 3,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(3)"
+      ]
+    },
+    {
+      "country": "CZ",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "AE",
+      "cohortCount": 4,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(4)"
+      ]
+    },
+    {
+      "country": "TW",
+      "cohortCount": 2,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(2)"
+      ]
+    },
+    {
+      "country": "BG",
+      "cohortCount": 1,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(1)"
+      ]
+    },
+    {
+      "country": "IE",
+      "cohortCount": 3,
+      "domainCount": 1,
+      "devicesPerDomain": [
+        "default(3)"
+      ]
+    }
+  ]
+}
