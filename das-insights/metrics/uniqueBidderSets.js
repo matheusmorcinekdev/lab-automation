@@ -39,6 +39,24 @@ function gatherBiddersFromNode(node, out) {
   }
 }
 
+function extractDateFromFilename(filePath) {
+  const filename = path.basename(filePath);
+  const match = filename.match(/(\d{1,2})-([a-z]{3})-(\d{4})/);
+  if (match) {
+    const [, day, month, year] = match;
+    const monthMap = {
+      'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04',
+      'may': '05', 'jun': '06', 'jul': '07', 'aug': '08',
+      'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
+    };
+    const monthNum = monthMap[month.toLowerCase()];
+    if (monthNum) {
+      return `${year}-${monthNum}-${day.padStart(2, '0')}`;
+    }
+  }
+  return new Date().toISOString().slice(0, 10); 
+}
+
 function main() {
   const filePath = process.argv[2];
   if (!filePath) {
@@ -87,7 +105,7 @@ function main() {
   }
 
   const result = {
-    date: new Date().toISOString().slice(0, 10),
+    date: extractDateFromFilename(filePath),
     cohorts_total: cohortResults.length,
     unique_bidder_lists: setKeys.size,
     unique_bidder_configs: configKeys.size,
