@@ -1,5 +1,3 @@
-# main.py
-# This is the main entry point for our secure agent application
 # It sets up authentication using JWT tokens from Keycloak and protects all agent endpoints
 
 import os
@@ -9,17 +7,16 @@ from fastapi.responses import JSONResponse
 from jose import jwt  # Library for handling JWT (JSON Web Tokens)
 from google.adk.cli.fast_api import get_fast_api_app
 
-# Import our custom agent instance
-# We need to add the wayfarer-agent directory to Python's path so we can import it
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), 'wayfarer-agent'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'wayfarer'))
 # Note: We don't manually import root_agent here - let ADK discover it automatically
 
 # ---- Security Configuration ----
 # These settings tell our app how to connect to Keycloak (our authentication server)
 REALM_URL = os.getenv("KC_REALM_URL", "http://localhost:8080/realms/master")  # Where Keycloak is running
-AUDIENCE  = os.getenv("KC_AUDIENCE", "adk-client")   # The client ID that tokens must be issued for
+# AUDIENCE  = os.getenv("KC_AUDIENCE", "adk-client")   # The client ID that tokens must be issued for
+AUDIENCE  = os.getenv("KC_AUDIENCE", "account")   # The client ID that tokens must be issued for
 
 # ---- Fetch Keycloak Security Information on Startup ----
 # When the app starts, we need to get Keycloak's public keys to verify JWT tokens

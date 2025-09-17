@@ -7,7 +7,7 @@ dotenv.config();
 const { App } = bolt;
 
 const app = new App({
-  socketMode: true,
+  socketMode: true, // for POC only
   appToken: process.env.SLACK_APP_TOKEN,
   token: process.env.SLACK_BOT_TOKEN,
 });
@@ -16,7 +16,7 @@ const app = new App({
 const AGENT_API_BASE = process.env.AGENT_API_BASE || "http://localhost:8000";
 const AGENT_NAME = process.env.AGENT_NAME || "TARS";
 
-// Whether to send X-Actor-* (your server will only honor them if the token has can_impersonate)
+// whether to send X-Actor-* (server will only honor them if the token has can_impersonate) *****
 const SEND_ACTOR_HEADERS = process.env.SEND_ACTOR_HEADERS !== "false";
 
 // ---- Keycloak S2S token (client_credentials) with simple in-memory cache ----

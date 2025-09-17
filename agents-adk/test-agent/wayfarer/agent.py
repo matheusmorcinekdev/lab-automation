@@ -1,4 +1,5 @@
 from google.adk.agents import Agent
+from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset, StdioServerParameters, StdioConnectionParams
 
 # # Security Callback Function (Currently Disabled)
 # This is an example of how you could add additional security validation
@@ -136,8 +137,22 @@ def my_session_state_test_tool(tool_context) -> dict:
 root_agent = Agent(
     name="wayfarer",                    # Internal name for the agent
     model="gemini-2.0-flash",                     # The AI model to use (Google's Gemini)
-    description="Agent to answer questions about the time in a city.",  # What the agent does
-    instruction="I can answer your questions about the time in a city.",  # How the agent should behave
-    # before_tool_callback=validate_tool_params,  # Optional: security validation (currently disabled)
-    tools=[my_session_state_test_tool]  # List of tools/functions the agent can use
+    description="Agent to answer questions.",  # What the agent does
+    instruction="""You are an assistant that answers user questions concisely and accurately.  
+If the user asks about tool access or available tools, respond by listing **all tools** you have, including their **names** and **descriptions**.  
+For any other question, provide a clear and helpful answer based on your knowledge and context.
+""", 
+    # before_tool_callback=validate_tool_params,  # Optional: security validation 
+    # tools=[my_session_state_test_tool,
+    tools=[
+        MCPToolset(
+            connection_params=StdioConnectionParams(
+                server_params=StdioServerParameters(
+                    command="npx",
+                    args=["-y", "@playwright/mcp@latest", "--browser", "chrome", "--headless"],  
+                ),
+                timeout=40.0,  
+            )
+        )
+    ]
 )
