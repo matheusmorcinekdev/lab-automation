@@ -7,6 +7,7 @@ function analyzeMetrics(filePath) {
     const cohorts = new Set();
     const bidderConfigs = new Set();
     const bidderFrequency = new Map();
+    const cohortConfigCounts = new Map();
     let totalBidderConfigs = 0;
     
     // Navigate through the structure: Country → Domain → Device → Placement
@@ -19,6 +20,10 @@ function analyzeMetrics(filePath) {
                     // Create cohort identifier
                     const cohortId = `${country}+${domain}+${device}+${placement}`;
                     cohorts.add(cohortId);
+                    
+                    // Count configurations per cohort
+                    const validConfigs = configs.filter(config => config.bidders && Array.isArray(config.bidders));
+                    cohortConfigCounts.set(cohortId, validConfigs.length);
                     
                     // Process each configuration in this cohort
                     for (const config of configs) {
@@ -47,12 +52,21 @@ function analyzeMetrics(filePath) {
         .sort((a, b) => b[1] - a[1])
         .map(([bidder, frequency]) => ({ bidder, frequency }));
     
+    // Calculate cohort complexity metrics
+    const cohortsWithMultipleConfigs = Array.from(cohortConfigCounts.values()).filter(count => count > 1).length;
+    const avgConfigsPerCohort = totalBidderConfigs / cohorts.size;
+    
     return {
         totalCohorts: cohorts.size,
         uniqueBidderConfigs: bidderConfigs.size,
         bidderConfigurations: {
             count: totalBidderConfigs,
             configurations: Array.from(bidderConfigs).map(config => config.split(','))
+        },
+        cohortComplexity: {
+            cohortsWithMultipleConfigs: cohortsWithMultipleConfigs,
+            percentageWithMultipleConfigs: ((cohortsWithMultipleConfigs / cohorts.size) * 100).toFixed(1),
+            averageConfigsPerCohort: avgConfigsPerCohort.toFixed(2)
         },
         bidderFrequency: {
             total: sortedBidders.length,
@@ -90,6 +104,8 @@ function main() {
         console.log(`- Total cohorts: ${results.totalCohorts}`);
         console.log(`- Total bidder configurations: ${results.bidderConfigurations.count}`);
         console.log(`- Unique bidder configurations: ${results.uniqueBidderConfigs}`);
+        console.log(`- Cohorts with multiple configs: ${results.cohortComplexity.cohortsWithMultipleConfigs} (${results.cohortComplexity.percentageWithMultipleConfigs}%)`);
+        console.log(`- Average configs per cohort: ${results.cohortComplexity.averageConfigsPerCohort}`);
         console.log(`- Total unique bidders: ${results.bidderFrequency.total}`);
         console.log(`- Top bidder: ${results.bidderFrequency.topBidders[0]?.bidder} (${results.bidderFrequency.topBidders[0]?.frequency} occurrences)`);
         
