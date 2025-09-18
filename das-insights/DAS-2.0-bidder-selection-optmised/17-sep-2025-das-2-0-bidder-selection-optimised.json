@@ -4490,31 +4490,37 @@
             },
             {
               "bidders": [
-                "ix",
-                "teads",
                 "pubmatic",
-                "rubicon",
                 "medianet",
+                "openx",
+                "ix",
+                "rubicon",
+                "criteo",
                 "triplelift",
                 "yieldmo",
-                "criteo",
+                "gumgum",
+                "appnexus",
                 "sovrn",
-                "appnexus"
+                "undertone",
+                "rise"
               ],
               "rttRange": [51, 999]
             },
             {
               "bidders": [
-                "ix",
-                "teads",
                 "pubmatic",
-                "rubicon",
                 "medianet",
+                "openx",
+                "ix",
+                "rubicon",
+                "criteo",
                 "triplelift",
                 "yieldmo",
-                "criteo",
+                "gumgum",
+                "appnexus",
                 "sovrn",
-                "undertone"
+                "undertone",
+                "rise"
               ],
               "rttRange": [11, 30]
             }
