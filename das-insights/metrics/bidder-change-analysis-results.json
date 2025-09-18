@@ -1,0 +1,182 @@
+{
+  "analysisPeriod": {
+    "startDate": "11-sep-2025",
+    "endDate": "17-sep-2025",
+    "totalDays": 6
+  },
+  "summary": {
+    "totalUniqueCohorts": 1666,
+    "cohortsWithBidderChanges": 1250,
+    "cohortsWithoutChanges": 416,
+    "changeFrequency": 75.03,
+    "averageChangesPerCohort": 2.08
+  },
+  "fileLevelMetrics": {
+    "averageCohortsPerFile": 1273.33,
+    "minCohortsPerFile": 1186,
+    "maxCohortsPerFile": 1362,
+    "cohortsPerFileByDate": [
+      {
+        "date": "11-sep-2025",
+        "cohortCount": 1362
+      },
+      {
+        "date": "12-sep-2025",
+        "cohortCount": 1289
+      },
+      {
+        "date": "13-sep-2025",
+        "cohortCount": 1265
+      },
+      {
+        "date": "14-sep-2025",
+        "cohortCount": 1186
+      },
+      {
+        "date": "15-sep-2025",
+        "cohortCount": 1237
+      },
+      {
+        "date": "17-sep-2025",
+        "cohortCount": 1301
+      }
+    ]
+  },
+  "changeDistribution": {
+    "0": 416,
+    "1": 281,
+    "2": 271,
+    "3": 304,
+    "4": 238,
+    "5": 156
+  },
+  "topChangingCohorts": [
+    {
+      "cohort": "GB|default|desktop|display",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "GB|default|desktop|sidewall",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "GB|default|default|sidewall",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "GB|default|smartphone-ios|stickyfooter",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "GB|aftvnews.com|default|default",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "CO|default|desktop|display",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "CO|default|smartphone-ios|default",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "CO|biblegateway.com|mobile|default",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "BR|aftvnews.com|default|default",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    },
+    {
+      "cohort": "US|legacy.com|desktop|default",
+      "changes": 5,
+      "daysActive": 6,
+      "changeRate": 0.8333333333333334
+    }
+  ],
+  "topUnchangedCohorts": [
+    {
+      "cohort": "GB|default|default|display",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "GB|default|mobile|display",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "GB|boredpanda.com|smartphone-ios|default",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "CO|default|default|default",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "BR|default|mobile|display",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "BR|default|desktop|default",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "BR|fragrantica.com.br|default|default",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "BR|fragrantica.com.br|default|display",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "US|newrepublic.com|default|default",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    },
+    {
+      "cohort": "US|newrepublic.com|default|display",
+      "changes": 0,
+      "daysActive": 6,
+      "stability": "100%"
+    }
+  ],
+  "detailedMetrics": {
+    "question": "How often do bidder lists change for a given cohort?",
+    "answer": "1250 out of 1666 cohorts (75%) experienced bidder list changes during the 6-day period.",
+    "averageChangeRate": "2.08 changes per cohort on average"
+  }
+}

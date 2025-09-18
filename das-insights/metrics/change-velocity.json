@@ -1,0 +1,2933 @@
+{
+  "analysis_period": {
+    "start_date": "2025-09-12",
+    "end_date": "2025-09-17",
+    "total_days": 5,
+    "comparison_days": 4
+  },
+  "options": {
+    "ignore_reorder": true,
+    "placement_aware": true
+  },
+  "summary": {
+    "total_cohorts": 1509,
+    "cohorts_with_changes": 1509,
+    "cohorts_unchanged": 0,
+    "most_changed_cohort": "AR|biblegateway.com|default|default",
+    "highest_change_count": 4
+  },
+  "cohort_change_velocity": [
+    {
+      "cohort": "AR|biblegateway.com|default|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sovrn, triplelift] → [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "yieldmo"
+          ],
+          "removed": [
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, sovrn, triplelift, yieldmo] → [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sovrn, triplelift]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sovrn, triplelift] → [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "yieldmo"
+          ],
+          "removed": [
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, sovrn, triplelift, yieldmo] → [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sovrn, triplelift]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "yieldmo"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "BR|beebom.com|desktop|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [] → [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift] (added: appnexus, criteo, grid, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift)",
+          "added": [
+            "appnexus",
+            "criteo",
+            "grid",
+            "ix",
+            "openx",
+            "pubmatic",
+            "rubicon",
+            "sovrn",
+            "teads",
+            "triplelift"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift] (added: insticator)",
+          "added": [
+            "insticator"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, seedtag, sovrn, triplelift]",
+          "added": [
+            "seedtag"
+          ],
+          "removed": [
+            "insticator",
+            "teads"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, grid, ix, openx, pubmatic, rubicon, seedtag, sovrn, triplelift] → [] (removed: appnexus, criteo, grid, ix, openx, pubmatic, rubicon, seedtag, sovrn, triplelift)",
+          "added": [],
+          "removed": [
+            "appnexus",
+            "criteo",
+            "grid",
+            "ix",
+            "openx",
+            "pubmatic",
+            "rubicon",
+            "seedtag",
+            "sovrn",
+            "triplelift"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "BR|aftvnews.com|default|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift] → [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (added: yieldmo)",
+          "added": [
+            "yieldmo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, grid, insticator, ix, pubmatic, rubicon, teads, triplelift] (removed: openx, yieldmo)",
+          "added": [],
+          "removed": [
+            "openx",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, insticator, ix, pubmatic, rubicon, teads, triplelift] → [appnexus, criteo, grid, ix, pubmatic, rubicon, seedtag, teads, triplelift, yieldmo]",
+          "added": [
+            "seedtag",
+            "yieldmo"
+          ],
+          "removed": [
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, pubmatic, rubicon, seedtag, teads, triplelift, yieldmo] → [appnexus, criteo, grid, insticator, ix, pubmatic, rubicon, teads, triplelift, yieldmo]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "seedtag"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "BR|default|smartphone-ios|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift] (added: openx)",
+          "added": [
+            "openx"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "seedtag",
+            "yieldmo"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "grid",
+            "seedtag",
+            "yieldmo"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "BR|default|mobile|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift] (added: openx)",
+          "added": [
+            "openx"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, grid, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift] (removed: openx)",
+          "added": [],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift] → [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, seedtag, sovrn, triplelift]",
+          "added": [
+            "seedtag"
+          ],
+          "removed": [
+            "teads"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, medianet, pubmatic, rubicon, seedtag, sovrn, triplelift] → [appnexus, criteo, grid, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift]",
+          "added": [
+            "openx",
+            "teads"
+          ],
+          "removed": [
+            "seedtag"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|emojicombos.com|smartphone-ios|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, gumgum, ix, medianet, pubmatic, rise, rubicon, triplelift, yieldmo] → [criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, triplelift, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, triplelift, yieldmo] → [criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: sharethrough)",
+          "added": [
+            "sharethrough"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, triplelift, yieldmo]",
+          "added": [
+            "33across",
+            "appnexus"
+          ],
+          "removed": [
+            "sharethrough"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, triplelift, yieldmo] (removed: 33across)",
+          "added": [],
+          "removed": [
+            "33across"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|pro-football-reference.com|smartphone-ios|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, insticator, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, yieldmo] → [insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, yieldmo]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, yieldmo] → [appnexus, insticator, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, yieldmo]",
+          "added": [
+            "appnexus"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, insticator, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, yieldmo] → [appnexus, criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, yieldmo] (added: criteo, openx)",
+          "added": [
+            "criteo",
+            "openx"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, yieldmo] → [appnexus, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, yieldmo] (removed: criteo)",
+          "added": [],
+          "removed": [
+            "criteo"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|pro-football-reference.com|default|stickyfooter",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, undertone, yieldmo] → [33across, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "33across"
+          ],
+          "removed": [
+            "undertone"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, undertone, yieldmo] → [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, undertone, yieldmo]",
+          "added": [
+            "appnexus"
+          ],
+          "removed": [
+            "triplelift"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, undertone, yieldmo] → [33across, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, undertone, yieldmo]",
+          "added": [
+            "33across",
+            "triplelift"
+          ],
+          "removed": [
+            "appnexus",
+            "sovrn"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|pro-football-reference.com|desktop|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (removed: appnexus)",
+          "added": [],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "gumgum"
+          ],
+          "removed": [
+            "teads"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [33across, appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "33across",
+            "appnexus"
+          ],
+          "removed": [
+            "gumgum"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [33across, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo]",
+          "added": [
+            "teads"
+          ],
+          "removed": [
+            "appnexus",
+            "sovrn"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|pro-football-reference.com|desktop|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [] (removed: ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo)",
+          "added": [],
+          "removed": [
+            "ix",
+            "medianet",
+            "openx",
+            "pubmatic",
+            "rise",
+            "rubicon",
+            "sovrn",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [] → [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] (added: appnexus, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo)",
+          "added": [
+            "appnexus",
+            "ix",
+            "medianet",
+            "openx",
+            "pubmatic",
+            "rise",
+            "rubicon",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (added: sovrn)",
+          "added": [
+            "sovrn"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    {
+      "cohort": "US|pro-football-reference.com|desktop|stickyfooter",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, undertone, yieldmo] → [] (removed: ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, undertone, yieldmo)",
+          "added": [],
+          "removed": [
+            "ix",
+            "medianet",
+            "openx",
+            "pubmatic",
+            "rise",
+            "rubicon",
+            "sovrn",
+            "triplelift",
+            "undertone",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [] → [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] (added: appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo)",
+          "added": [
+            "appnexus",
+            "ix",
+            "medianet",
+            "openx",
+            "pubmatic",
+            "rise",
+            "rubicon",
+            "sovrn",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [33across, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, undertone, yieldmo]",
+          "added": [
+            "33across",
+            "undertone"
+          ],
+          "removed": [
+            "appnexus",
+            "sovrn"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|signupgenius.com|smartphone-ios|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [criteo, gumgum, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (removed: appnexus, openx)",
+          "added": [],
+          "removed": [
+            "appnexus",
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, gumgum, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (added: appnexus, openx)",
+          "added": [
+            "appnexus",
+            "openx"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (removed: appnexus)",
+          "added": [],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [criteo, grid, gumgum, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "openx"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|signupgenius.com|smartphone-ios|stickyfooter",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, gumgum, insticator, medianet, openx, rise, rubicon, sharethrough, teads, undertone] → [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, teads, triplelift, undertone]",
+          "added": [
+            "ix",
+            "pubmatic",
+            "triplelift"
+          ],
+          "removed": [
+            "33across",
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, teads, triplelift, undertone] → [33across, appnexus, gumgum, medianet, rise, rubicon, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "33across",
+            "yieldmo"
+          ],
+          "removed": [
+            "criteo",
+            "ix",
+            "openx",
+            "pubmatic",
+            "sharethrough"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, gumgum, medianet, rise, rubicon, teads, triplelift, undertone, yieldmo] → [appnexus, criteo, gumgum, ix, medianet, openx, rise, rubicon, teads, undertone]",
+          "added": [
+            "criteo",
+            "ix",
+            "openx"
+          ],
+          "removed": [
+            "33across",
+            "triplelift",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, gumgum, ix, medianet, openx, rise, rubicon, teads, undertone] → [33across, appnexus, criteo, gumgum, insticator, ix, medianet, rise, rubicon, teads, undertone, yahoossp]",
+          "added": [
+            "33across",
+            "insticator",
+            "yahoossp"
+          ],
+          "removed": [
+            "openx"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|signupgenius.com|desktop|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (added: rise)",
+          "added": [
+            "rise"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] (added: gumgum, undertone)",
+          "added": [
+            "gumgum",
+            "undertone"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, undertone, yieldmo] (removed: gumgum, sovrn, teads)",
+          "added": [],
+          "removed": [
+            "gumgum",
+            "sovrn",
+            "teads"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, undertone, yieldmo] → [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "sovrn",
+            "teads"
+          ],
+          "removed": [
+            "undertone"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|apnews.com|mobile|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [appnexus, criteo, ix, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "appnexus"
+          ],
+          "removed": [
+            "33across",
+            "medianet"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "medianet"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [appnexus, criteo, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] (added: appnexus)",
+          "added": [
+            "appnexus"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] (removed: appnexus)",
+          "added": [],
+          "removed": [
+            "appnexus"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|apnews.com|smartphone-ios|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, grid, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "grid",
+            "insticator"
+          ],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, grid, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [33across, criteo, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "33across"
+          ],
+          "removed": [
+            "grid",
+            "insticator",
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [33across, grid, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "grid",
+            "openx"
+          ],
+          "removed": [
+            "criteo"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, grid, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "criteo"
+          ],
+          "removed": [
+            "33across",
+            "grid"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|apnews.com|smartphone-ios|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [grid, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [grid, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [33across, criteo, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "33across",
+            "criteo"
+          ],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, ix, medianet, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "33across",
+            "criteo"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "criteo"
+          ],
+          "removed": [
+            "rise"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|apnews.com|default|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, medianet, openx, pubmatic, rubicon, teads, triplelift, undertone, yieldmo] → [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "medianet"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rubicon, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "medianet"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, medianet, openx, pubmatic, rubicon, teads, triplelift, undertone, yieldmo] → [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "medianet"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "medianet"
+          ],
+          "removed": [
+            "undertone"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|apnews.com|default|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, medianet, openx, pubmatic, rubicon, teads, triplelift, undertone, yieldmo] → [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "medianet"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rubicon, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "medianet"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, medianet, openx, pubmatic, rubicon, teads, triplelift, undertone, yieldmo] → [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "medianet"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "medianet"
+          ],
+          "removed": [
+            "undertone"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|default|desktop|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] → [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] (added: gumgum)",
+          "added": [
+            "gumgum"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] → [criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] (removed: appnexus)",
+          "added": [],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] → [criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] (added: teads)",
+          "added": [
+            "teads"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "appnexus",
+            "sharethrough"
+          ],
+          "removed": [
+            "teads"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|default|desktop|pushdown",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift] → [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "yieldmo"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] → [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "appnexus"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|default|desktop|stickyfootervideo",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "removed",
+          "description": "Bidder removed: [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] → [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (removed: sovrn)",
+          "added": [],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] (added: sovrn)",
+          "added": [
+            "sovrn"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] → [gumgum, ix, medianet, pubmatic, rise, rubicon, sharethrough, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "openx",
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [gumgum, ix, medianet, pubmatic, rise, rubicon, sharethrough, triplelift, undertone, yieldmo] → [gumgum, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "undertone"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|default|default|cube",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] → [appnexus, criteo, ix, medianet, pubmatic, rise, rubicon, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, pubmatic, rise, rubicon, triplelift, undertone, yieldmo] → [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "undertone"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] → [appnexus, criteo, ix, medianet, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, medianet, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [appnexus, insticator, ix, medianet, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "insticator",
+            "sharethrough"
+          ],
+          "removed": [
+            "criteo",
+            "sovrn"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|default|mobile|stickyfootervideo",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, gumgum, ix, medianet, rise, seedtag, sharethrough, undertone, yieldmo] → [33across, gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sharethrough, yieldmo]",
+          "added": [
+            "pubmatic",
+            "rubicon"
+          ],
+          "removed": [
+            "criteo",
+            "undertone"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sharethrough, yieldmo] → [33across, criteo, gumgum, ix, medianet, pubmatic, rise, seedtag, sharethrough, yieldmo]",
+          "added": [
+            "criteo"
+          ],
+          "removed": [
+            "rubicon"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, gumgum, ix, medianet, pubmatic, rise, seedtag, sharethrough, yieldmo] → [33across, criteo, gumgum, ix, medianet, pubmatic, rubicon, seedtag, triplelift, yieldmo]",
+          "added": [
+            "rubicon",
+            "triplelift"
+          ],
+          "removed": [
+            "rise",
+            "sharethrough"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, gumgum, ix, medianet, pubmatic, rubicon, seedtag, triplelift, yieldmo] → [33across, criteo, gumgum, ix, medianet, pubmatic, rise, triplelift, undertone, yieldmo]",
+          "added": [
+            "rise",
+            "undertone"
+          ],
+          "removed": [
+            "rubicon",
+            "seedtag"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|default|smartphone-ios|stickyfooter",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [gumgum, insticator, ix, medianet, pubmatic, rise, rubicon, seedtag, triplelift, undertone, yieldmo] → [gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sovrn, triplelift, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "insticator",
+            "undertone"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sovrn, triplelift, yieldmo] → [gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sharethrough, sovrn, triplelift, yieldmo] (added: sharethrough)",
+          "added": [
+            "sharethrough"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sharethrough, sovrn, triplelift, yieldmo] → [33across, gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sovrn, triplelift, yieldmo]",
+          "added": [
+            "33across"
+          ],
+          "removed": [
+            "sharethrough"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, gumgum, ix, medianet, pubmatic, rise, rubicon, seedtag, sovrn, triplelift, yieldmo] → [33across, gumgum, insticator, ix, medianet, pubmatic, rise, rubicon, sovrn, triplelift, undertone, yieldmo]",
+          "added": [
+            "insticator",
+            "undertone"
+          ],
+          "removed": [
+            "seedtag"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|default|smartphone-ios|pushdown",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, insticator, ix, medianet, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [criteo, insticator, ix, medianet, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] (added: sharethrough)",
+          "added": [
+            "sharethrough"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [criteo, insticator, ix, medianet, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] → [criteo, ix, medianet, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] (removed: insticator)",
+          "added": [],
+          "removed": [
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, ix, medianet, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] (added: openx)",
+          "added": [
+            "openx"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sharethrough, sovrn, triplelift, yieldmo] → [criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "sharethrough"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|lingojam.com|default|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, gumgum, medianet, pubmatic, rise, rubicon, triplelift, yieldmo] → [appnexus, criteo, gumgum, medianet, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, gumgum, medianet, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [criteo, grid, gumgum, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo]",
+          "added": [
+            "grid",
+            "openx"
+          ],
+          "removed": [
+            "appnexus",
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, grid, gumgum, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] (added: appnexus)",
+          "added": [
+            "appnexus"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, gumgum, medianet, openx, pubmatic, rise, rubicon, triplelift, yieldmo] → [33across, appnexus, criteo, gumgum, medianet, pubmatic, rise, rubicon, triplelift, yieldmo]",
+          "added": [
+            "33across"
+          ],
+          "removed": [
+            "grid",
+            "openx"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|aftvnews.com|default|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (removed: rise)",
+          "added": [],
+          "removed": [
+            "rise"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] → [33across, appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sharethrough, teads, triplelift, yieldmo] (added: 33across, sharethrough)",
+          "added": [
+            "33across",
+            "sharethrough"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, sharethrough, teads, triplelift, yieldmo] → [33across, appnexus, criteo, grid, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo]",
+          "added": [
+            "rise"
+          ],
+          "removed": [
+            "sharethrough"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, criteo, grid, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [33across, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (removed: appnexus, criteo, rise)",
+          "added": [],
+          "removed": [
+            "appnexus",
+            "criteo",
+            "rise"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|smithsonianmag.com|default|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, ix, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (added: openx)",
+          "added": [
+            "openx"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, ix, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (removed: openx)",
+          "added": [],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "seedtag"
+          ],
+          "removed": [
+            "rise"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo]",
+          "added": [
+            "openx",
+            "rise"
+          ],
+          "removed": [
+            "seedtag",
+            "sovrn"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|smithsonianmag.com|default|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "rise"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "seedtag"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, openx, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "seedtag"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|smithsonianmag.com|mobile|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [] → [appnexus, criteo, grid, ix, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo] (added: appnexus, criteo, grid, ix, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo)",
+          "added": [
+            "appnexus",
+            "criteo",
+            "grid",
+            "ix",
+            "pubmatic",
+            "rubicon",
+            "sovrn",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, ix, pubmatic, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "rise"
+          ],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, ix, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [appnexus, criteo, ix, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "seedtag"
+          ],
+          "removed": [
+            "rise"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, ix, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo] → [] (removed: appnexus, criteo, ix, pubmatic, rubicon, seedtag, sovrn, teads, triplelift, yieldmo)",
+          "added": [],
+          "removed": [
+            "appnexus",
+            "criteo",
+            "ix",
+            "pubmatic",
+            "rubicon",
+            "seedtag",
+            "sovrn",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|myfantasyleague.com|default|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yahoossp, yieldmo]",
+          "added": [
+            "yahoossp"
+          ],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yahoossp, yieldmo] → [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo]",
+          "added": [
+            "33across"
+          ],
+          "removed": [
+            "yahoossp"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] → [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, undertone, yahoossp, yieldmo] (added: undertone, yahoossp)",
+          "added": [
+            "undertone",
+            "yahoossp"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, undertone, yahoossp, yieldmo] → [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] (removed: undertone, yahoossp)",
+          "added": [],
+          "removed": [
+            "undertone",
+            "yahoossp"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|myfantasyleague.com|default|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] → [33across, appnexus, criteo, gumgum, insticator, ix, pubmatic, sovrn, triplelift, yieldmo]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, criteo, gumgum, insticator, ix, pubmatic, sovrn, triplelift, yieldmo] → [] (removed: 33across, appnexus, criteo, gumgum, insticator, ix, pubmatic, sovrn, triplelift, yieldmo)",
+          "added": [],
+          "removed": [
+            "33across",
+            "appnexus",
+            "criteo",
+            "gumgum",
+            "insticator",
+            "ix",
+            "pubmatic",
+            "sovrn",
+            "triplelift",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [] → [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] (added: 33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo)",
+          "added": [
+            "33across",
+            "appnexus",
+            "criteo",
+            "grid",
+            "gumgum",
+            "ix",
+            "pubmatic",
+            "sovrn",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "33across"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|myfantasyleague.com|desktop|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [] → [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] (added: 33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo)",
+          "added": [
+            "33across",
+            "appnexus",
+            "criteo",
+            "grid",
+            "gumgum",
+            "ix",
+            "pubmatic",
+            "sovrn",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] → [] (removed: 33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo)",
+          "added": [],
+          "removed": [
+            "33across",
+            "appnexus",
+            "criteo",
+            "grid",
+            "gumgum",
+            "ix",
+            "pubmatic",
+            "sovrn",
+            "triplelift",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [] → [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] (added: 33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo)",
+          "added": [
+            "33across",
+            "appnexus",
+            "criteo",
+            "grid",
+            "gumgum",
+            "ix",
+            "pubmatic",
+            "sovrn",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, ix, pubmatic, sovrn, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "33across"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|remax.com|smartphone-ios|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, gumgum, insticator, ix, medianet, rubicon, sovrn, triplelift, yieldmo] → [33across, grid, gumgum, insticator, ix, medianet, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, grid, gumgum, insticator, ix, medianet, rubicon, sovrn, triplelift, yieldmo] → [33across, appnexus, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "appnexus",
+            "openx"
+          ],
+          "removed": [
+            "grid",
+            "gumgum"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [33across, appnexus, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo] → [33across, appnexus, criteo, gumgum, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo] (added: criteo, gumgum)",
+          "added": [
+            "criteo",
+            "gumgum"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, criteo, gumgum, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo] → [33across, appnexus, gumgum, insticator, ix, medianet, rubicon, sovrn, triplelift, yieldmo] (removed: criteo, openx)",
+          "added": [],
+          "removed": [
+            "criteo",
+            "openx"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|remax.com|smartphone-ios|stickyfooter",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, gumgum, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo] → [33across, criteo, gumgum, insticator, ix, medianet, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "criteo"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, gumgum, insticator, ix, medianet, rubicon, sovrn, triplelift, yieldmo] → [33across, appnexus, gumgum, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "appnexus",
+            "openx"
+          ],
+          "removed": [
+            "criteo",
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, gumgum, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo] → [33across, gumgum, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, gumgum, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo] → [] (removed: 33across, gumgum, insticator, ix, medianet, openx, rubicon, sovrn, triplelift, yieldmo)",
+          "added": [],
+          "removed": [
+            "33across",
+            "gumgum",
+            "insticator",
+            "ix",
+            "medianet",
+            "openx",
+            "rubicon",
+            "sovrn",
+            "triplelift",
+            "yieldmo"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|deckshop.pro|smartphone-ios|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [gumgum, insticator, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [criteo, insticator, medianet, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "criteo"
+          ],
+          "removed": [
+            "gumgum",
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, insticator, medianet, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, insticator, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: appnexus, grid, gumgum, openx)",
+          "added": [
+            "appnexus",
+            "grid",
+            "gumgum",
+            "openx"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, grid, gumgum, insticator, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [criteo, insticator, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (removed: appnexus, grid, gumgum)",
+          "added": [],
+          "removed": [
+            "appnexus",
+            "grid",
+            "gumgum"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, insticator, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [criteo, gumgum, insticator, medianet, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: gumgum)",
+          "added": [
+            "gumgum"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    {
+      "cohort": "US|flightaware.com|smartphone-ios|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (added: insticator)",
+          "added": [
+            "insticator"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (removed: criteo)",
+          "added": [],
+          "removed": [
+            "criteo"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [insticator, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [insticator, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, undertone, yieldmo] → [criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, undertone, yieldmo] (added: criteo, sovrn)",
+          "added": [
+            "criteo",
+            "sovrn"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    {
+      "cohort": "US|flightaware.com|smartphone-ios|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (added: criteo)",
+          "added": [
+            "criteo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] (added: insticator)",
+          "added": [
+            "insticator"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, insticator, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo] → [insticator, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, undertone, yieldmo]",
+          "added": [
+            "undertone"
+          ],
+          "removed": [
+            "criteo",
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [insticator, ix, medianet, openx, pubmatic, rise, rubicon, teads, triplelift, undertone, yieldmo] → [criteo, ix, medianet, openx, pubmatic, rise, rubicon, sovrn, teads, triplelift, yieldmo]",
+          "added": [
+            "criteo",
+            "sovrn"
+          ],
+          "removed": [
+            "insticator",
+            "undertone"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|newrepublic.com|mobile|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (added: appnexus)",
+          "added": [
+            "appnexus"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (removed: grid)",
+          "added": [],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] → [] (removed: appnexus, criteo, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo)",
+          "added": [],
+          "removed": [
+            "appnexus",
+            "criteo",
+            "insticator",
+            "ix",
+            "openx",
+            "pubmatic",
+            "rubicon",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [] → [appnexus, criteo, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (added: appnexus, criteo, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo)",
+          "added": [
+            "appnexus",
+            "criteo",
+            "insticator",
+            "ix",
+            "openx",
+            "pubmatic",
+            "rubicon",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    {
+      "cohort": "US|newrepublic.com|smartphone-ios|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] (added: grid)",
+          "added": [
+            "grid"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [appnexus, criteo, grid, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [criteo, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] (removed: appnexus, grid)",
+          "added": [],
+          "removed": [
+            "appnexus",
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo]",
+          "added": [
+            "appnexus"
+          ],
+          "removed": [
+            "rise"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] → [appnexus, criteo, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] (added: rise)",
+          "added": [
+            "rise"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    {
+      "cohort": "US|newrepublic.com|smartphone-ios|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [criteo, grid, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [criteo, grid, insticator, ix, openx, pubmatic, rise, rubicon, teads, triplelift, yieldmo] → [criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (removed: rise)",
+          "added": [],
+          "removed": [
+            "rise"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "removed",
+          "description": "Bidder removed: [criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] → [] (removed: criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo)",
+          "added": [],
+          "removed": [
+            "criteo",
+            "grid",
+            "insticator",
+            "ix",
+            "openx",
+            "pubmatic",
+            "rubicon",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [] → [criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo] (added: criteo, grid, insticator, ix, openx, pubmatic, rubicon, teads, triplelift, yieldmo)",
+          "added": [
+            "criteo",
+            "grid",
+            "insticator",
+            "ix",
+            "openx",
+            "pubmatic",
+            "rubicon",
+            "teads",
+            "triplelift",
+            "yieldmo"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    {
+      "cohort": "US|lipstickalley.com|smartphone-ios|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (removed: 33across)",
+          "added": [],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [appnexus, criteo, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: criteo)",
+          "added": [
+            "criteo"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [appnexus, grid, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "criteo"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, grid, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, grid, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: 33across)",
+          "added": [
+            "33across"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    {
+      "cohort": "US|lipstickalley.com|smartphone-ios|pushdown",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, criteo, grid, gumgum, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: 33across, grid, gumgum)",
+          "added": [
+            "33across",
+            "grid",
+            "gumgum"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, criteo, grid, gumgum, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (removed: 33across, criteo, grid, gumgum)",
+          "added": [],
+          "removed": [
+            "33across",
+            "criteo",
+            "grid",
+            "gumgum"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, grid, gumgum, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: 33across, grid, gumgum)",
+          "added": [
+            "33across",
+            "grid",
+            "gumgum"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, appnexus, grid, gumgum, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, grid, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (removed: gumgum)",
+          "added": [],
+          "removed": [
+            "gumgum"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|lipstickalley.com|default|stickyfooter",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, grid, gumgum, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "grid",
+            "gumgum"
+          ],
+          "removed": [
+            "appnexus",
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, grid, gumgum, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, grid, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "appnexus"
+          ],
+          "removed": [
+            "gumgum"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, grid, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, insticator, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [33across, appnexus, gumgum, ix, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "gumgum"
+          ],
+          "removed": [
+            "insticator"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|the-express.com|desktop|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [33across, criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] (added: 33across)",
+          "added": [
+            "33across"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [criteo, grid, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "33across",
+            "insticator"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, grid, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "insticator"
+          ],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [criteo, grid, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "insticator"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|the-express.com|mobile|display",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [criteo, gumgum, insticator, ix, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "gumgum"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, gumgum, insticator, ix, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "openx"
+          ],
+          "removed": [
+            "gumgum"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "added",
+          "description": "Bidder added: [criteo, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [33across, criteo, grid, gumgum, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] (added: 33across, grid, gumgum)",
+          "added": [
+            "33across",
+            "grid",
+            "gumgum"
+          ],
+          "removed": []
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "removed",
+          "description": "Bidder removed: [33across, criteo, grid, gumgum, insticator, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [33across, criteo, grid, ix, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] (removed: gumgum, insticator)",
+          "added": [],
+          "removed": [
+            "gumgum",
+            "insticator"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|bandsintown.com|default|stickyfooter",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, gumgum, medianet, openx, pubmatic, rise, triplelift, undertone, yieldmo] → [33across, criteo, gumgum, medianet, pubmatic, rise, sovrn, triplelift, undertone, yieldmo]",
+          "added": [
+            "sovrn"
+          ],
+          "removed": [
+            "openx"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, gumgum, medianet, pubmatic, rise, sovrn, triplelift, undertone, yieldmo] → [33across, criteo, grid, gumgum, medianet, pubmatic, rise, triplelift, undertone, yieldmo]",
+          "added": [
+            "grid"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, grid, gumgum, medianet, pubmatic, rise, triplelift, undertone, yieldmo] → [33across, appnexus, criteo, gumgum, medianet, pubmatic, rise, triplelift, undertone, yieldmo]",
+          "added": [
+            "appnexus"
+          ],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, gumgum, medianet, pubmatic, rise, triplelift, undertone, yieldmo] → [33across, criteo, grid, gumgum, medianet, pubmatic, rise, sovrn, undertone, yieldmo]",
+          "added": [
+            "grid",
+            "sovrn"
+          ],
+          "removed": [
+            "appnexus",
+            "triplelift"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|bandsintown.com|desktop|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, gumgum, medianet, openx, pubmatic, rise, rubicon, yieldmo] → [criteo, grid, gumgum, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo]",
+          "added": [
+            "grid",
+            "sovrn",
+            "triplelift"
+          ],
+          "removed": [
+            "33across",
+            "appnexus"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [criteo, grid, gumgum, medianet, openx, pubmatic, rise, rubicon, sovrn, triplelift, yieldmo] → [33across, criteo, gumgum, medianet, openx, rise, rubicon, sovrn, undertone, yieldmo]",
+          "added": [
+            "33across",
+            "undertone"
+          ],
+          "removed": [
+            "grid",
+            "pubmatic",
+            "triplelift"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, criteo, gumgum, medianet, openx, rise, rubicon, sovrn, undertone, yieldmo] → [33across, appnexus, criteo, gumgum, medianet, openx, pubmatic, rise, rubicon, yieldmo]",
+          "added": [
+            "appnexus",
+            "pubmatic"
+          ],
+          "removed": [
+            "sovrn",
+            "undertone"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, gumgum, medianet, openx, pubmatic, rise, rubicon, yieldmo] → [appnexus, criteo, grid, medianet, openx, pubmatic, rise, rubicon, sovrn, yieldmo]",
+          "added": [
+            "grid",
+            "sovrn"
+          ],
+          "removed": [
+            "33across",
+            "gumgum"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "US|zerogpt.com|desktop|default",
+      "total_changes": 4,
+      "change_frequency": 100,
+      "last_changed": "2025-09-17",
+      "change_dates": [
+        {
+          "from": "2025-09-12",
+          "to": "2025-09-13",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, gumgum, ix, openx, pubmatic, sharethrough, sovrn, triplelift, yieldmo] → [33across, appnexus, criteo, grid, gumgum, ix, openx, pubmatic, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "33across"
+          ],
+          "removed": [
+            "sovrn"
+          ]
+        },
+        {
+          "from": "2025-09-13",
+          "to": "2025-09-14",
+          "changeType": "replaced",
+          "description": "Complete replacement: [33across, appnexus, criteo, grid, gumgum, ix, openx, pubmatic, sharethrough, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, ix, openx, pubmatic, rise, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "rise"
+          ],
+          "removed": [
+            "33across"
+          ]
+        },
+        {
+          "from": "2025-09-14",
+          "to": "2025-09-15",
+          "changeType": "replaced",
+          "description": "Complete replacement: [appnexus, criteo, grid, gumgum, ix, openx, pubmatic, rise, sharethrough, triplelift, yieldmo] → [appnexus, criteo, gumgum, ix, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo]",
+          "added": [
+            "rubicon"
+          ],
+          "removed": [
+            "grid"
+          ]
+        },
+        {
+          "from": "2025-09-15",
+          "to": "2025-09-17",
+          "changeType": "added",
+          "description": "Bidder added: [appnexus, criteo, gumgum, ix, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] → [appnexus, criteo, grid, gumgum, ix, openx, pubmatic, rise, rubicon, sharethrough, triplelift, yieldmo] (added: grid)",
+          "added": [
+            "grid"
+          ],
+          "removed": []
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Change velocity = how often bidder lists change for each cohort",
+    "change_frequency = percentage of days the cohort changed",
+    "Only shows cohorts that changed at least once",
+    "changeType: added, removed, reordered, replaced",
+    "Placement-aware: compares bidders per placement type"
+  ]
+}
