@@ -20,6 +20,7 @@ function analyzeMetrics(filePath) {
                     // Create cohort identifier
                     const cohortId = `${country}+${domain}+${device}+${placement}`;
                     cohorts.add(cohortId);
+                    // console.log(`Processing cohort: ${cohortId}`);
                     
                     // Count configurations per cohort
                     const validConfigs = configs.filter(config => config.bidders && Array.isArray(config.bidders));

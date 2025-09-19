@@ -1,0 +1,20 @@
+{
+  "cohortsAppeared": {
+    "count": 252
+  },
+  "cohortsDisappeared": {
+    "count": 188
+  },
+  "cohortsWithBidderChanges": {
+    "count": 779
+  },
+  "summary": {
+    "totalTodayCohorts": 1301,
+    "totalYesterdayCohorts": 1237,
+    "netCohortChange": 64,
+    "unchangedCohorts": 270
+  },
+  "analysisDate": "2025-09-18T22:35:21.679Z",
+  "todayFile": "17-sep-2025-das-2-0-bidder-selection-optimised.json",
+  "yesterdayFile": "15-sep-2025-das-2-0-bidder-selection-optimised.json"
+}
